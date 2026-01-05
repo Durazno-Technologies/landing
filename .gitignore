@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Nuxt build output
+.nuxt/
+.output/
+dist/
+
+# Firebase
+.firebase/
+
+# OS
+.DS_Store
+Thumbs.db
