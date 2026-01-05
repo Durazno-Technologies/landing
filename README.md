@@ -2,7 +2,7 @@
 
 **Mentorship discovery for developers. Anonymous. Free. Open source.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ---
 
