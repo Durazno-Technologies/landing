@@ -122,6 +122,12 @@ const formattedDate = new Date().toLocaleDateString('en-US', {
 })
 
 useHead({
-  title: 'Terms of Service - Durazno'
+  title: 'Terms of Service - Durazno',
+  link: [
+    { rel: 'canonical', href: 'https://durazno.org/terms-of-service/' }
+  ],
+  meta: [
+    { property: 'og:url', content: 'https://durazno.org/terms-of-service/' }
+  ]
 })
 </script>

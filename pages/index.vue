@@ -16,7 +16,14 @@ useSeoMeta({
   ogTitle: 'Durazno - Mentorship Discovery Platform',
   description: 'Conecta con mentores verificados de forma anónima y gratuita. Sin marketplace. Sin feeds. Solo conexiones que importan.',
   ogDescription: 'Conecta con mentores verificados de forma anónima y gratuita. Sin marketplace. Sin feeds. Solo conexiones que importan.',
-  ogImage: '/og-image.png',
+  ogImage: 'https://durazno.org/og-image.png',
+  ogUrl: 'https://durazno.org/',
   twitterCard: 'summary_large_image',
+})
+
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://durazno.org/' }
+  ]
 })
 </script>

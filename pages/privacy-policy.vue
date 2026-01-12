@@ -102,6 +102,12 @@ const formattedDate = new Date().toLocaleDateString('en-US', {
 })
 
 useHead({
-  title: 'Privacy Policy - Durazno'
+  title: 'Privacy Policy - Durazno',
+  link: [
+    { rel: 'canonical', href: 'https://durazno.org/privacy-policy/' }
+  ],
+  meta: [
+    { property: 'og:url', content: 'https://durazno.org/privacy-policy/' }
+  ]
 })
 </script>
