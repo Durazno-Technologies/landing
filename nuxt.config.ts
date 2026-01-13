@@ -33,6 +33,12 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://durazno.org/' },
       ],
+      script: [
+        {
+          // Reddit Pixel - Carga diferida para no bloquear render
+          innerHTML: `(function(){var loadPixel=function(){if(!window.rdt){var p=window.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=document.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js";t.async=!0;document.head.appendChild(t)}rdt('init','a2_gic4yg9gi7g0');};if('requestIdleCallback' in window){requestIdleCallback(loadPixel)}else{setTimeout(loadPixel,1)}})();`
+        }
+      ],
       link: [
         { rel: 'canonical', href: 'https://durazno.org/' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -42,7 +48,10 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/site.webmanifest' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' }
+        // Preload font CSS to avoid render-blocking
+        { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap', as: 'style', onload: "this.onload=null;this.rel='stylesheet'" },
+        // Fallback for browsers without JS
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap', media: 'print', onload: "this.media='all'" }
       ],
       htmlAttrs: {
         lang: 'es',

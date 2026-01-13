@@ -148,6 +148,11 @@ const signInWithGoogle = async () => {
   isLoading.value = true
   error.value = ''
 
+  // Track SignUp intent when user clicks the button
+  if (typeof window !== 'undefined' && (window as any).rdt) {
+    ;(window as any).rdt('track', 'SignUp')
+  }
+
   try {
     // Store the selected role in localStorage so we can retrieve it after OAuth redirect
     localStorage.setItem('durazno_pending_role', selectedRole.value)

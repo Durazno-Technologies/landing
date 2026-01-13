@@ -26,4 +26,11 @@ useHead({
     { rel: 'canonical', href: 'https://durazno.org/' }
   ]
 })
+
+// Track PageVisit only on landing page
+onMounted(() => {
+  if (typeof window !== 'undefined' && (window as any).rdt) {
+    ;(window as any).rdt('track', 'PageVisit')
+  }
+})
 </script>

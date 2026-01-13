@@ -214,6 +214,12 @@ onMounted(() => {
   // If no session data, redirect to home
   if (!email) {
     navigateTo('/')
+    return
+  }
+
+  // Track Lead conversion - user completed registration and reached dashboard
+  if (typeof window !== 'undefined' && (window as any).rdt) {
+    ;(window as any).rdt('track', 'Lead')
   }
 })
 

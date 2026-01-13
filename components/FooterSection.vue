@@ -5,7 +5,7 @@
         <!-- Brand -->
         <div class="text-center md:text-left">
           <h3 class="text-2xl font-bold gradient-text mb-1">Durazno</h3>
-          <p class="text-gray-500 text-sm">Mentorship Discovery Platform</p>
+          <p class="text-gray-400 text-sm">Mentorship Discovery Platform</p>
         </div>
 
         <!-- Tagline -->
@@ -18,7 +18,7 @@
         </div>
 
         <!-- Links -->
-        <div class="flex items-center gap-6 text-gray-500">
+        <div class="flex items-center gap-6 text-gray-400">
           <a
             href="https://durazno.org"
             target="_blank"
@@ -32,17 +32,17 @@
 
       <!-- Legal links -->
       <div class="mt-8 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
-        <NuxtLink to="/privacy-policy" class="text-gray-500 hover:text-white text-sm transition-colors">
+        <NuxtLink to="/privacy-policy" class="text-gray-400 hover:text-white text-sm transition-colors">
           Política de Privacidad
         </NuxtLink>
-        <NuxtLink to="/terms-of-service" class="text-gray-500 hover:text-white text-sm transition-colors">
+        <NuxtLink to="/terms-of-service" class="text-gray-400 hover:text-white text-sm transition-colors">
           Términos de Servicio
         </NuxtLink>
       </div>
 
       <!-- Copyright -->
       <div class="mt-4 text-center">
-        <p class="text-gray-600 text-sm">
+        <p class="text-gray-400 text-sm">
           © {{ currentYear }} Durazno. Todos los derechos reservados.
         </p>
       </div>
