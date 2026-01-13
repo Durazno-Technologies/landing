@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   // Static site generation
   ssr: true,
   nitro: {
-    preset: 'static'
+    preset: 'static',
+    compressPublicAssets: true,
   },
 
   modules: [
@@ -19,7 +20,38 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+      ...(process.env.NODE_ENV === 'production' ? { cssnano: { preset: 'default' } } : {})
     },
+  },
+
+  // Vite optimizations
+  vite: {
+    build: {
+      cssMinify: 'lightningcss',
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true
+        }
+      },
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vendor': ['vue', 'vue-router']
+          }
+        }
+      }
+    },
+    css: {
+      devSourcemap: false
+    }
+  },
+
+  // Experimental features for better performance
+  experimental: {
+    inlineStyles: true, // Inline critical CSS
+    viewTransition: true
   },
 
   app: {
