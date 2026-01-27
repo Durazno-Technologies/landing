@@ -104,10 +104,10 @@ const formattedDate = new Date().toLocaleDateString('en-US', {
 useHead({
   title: 'Privacy Policy - Durazno',
   link: [
-    { rel: 'canonical', href: 'https://durazno.org/privacy-policy/' }
+    { rel: 'canonical', href: 'https://mentor.durazno.org/privacy-policy/' }
   ],
   meta: [
-    { property: 'og:url', content: 'https://durazno.org/privacy-policy/' }
+    { property: 'og:url', content: 'https://mentor.durazno.org/privacy-policy/' }
   ]
 })
 </script>

@@ -6,8 +6,7 @@ const firestore = new Firestore();
 
 // Allowed origins for CORS
 const allowedOrigins = [
-  'https://durazno.org',
-  'https://www.durazno.org'
+  'https://mentor.durazno.org',
 ];
 
 // Token alphabet - excludes confusing characters (0,O,1,l,I)

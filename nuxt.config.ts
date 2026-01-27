@@ -63,7 +63,7 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Durazno - Encuentra tu mentor' },
         { property: 'og:description', content: 'Conecta con mentores verificados de forma anónima y gratuita.' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://durazno.org/' },
+        { property: 'og:url', content: 'https://mentor.durazno.org/' },
       ],
       script: [
         {
@@ -72,7 +72,7 @@ export default defineNuxtConfig({
         }
       ],
       link: [
-        { rel: 'canonical', href: 'https://durazno.org/' },
+        { rel: 'canonical', href: 'https://mentor.durazno.org/' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },

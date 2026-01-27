@@ -60,7 +60,7 @@ A platform that connects mentors and mentees in tech without the noise of social
 
 - **Tokens**: Generated with `crypto.randomBytes()` (CSPRNG)
 - **Storage**: SHA-256 hashed, never plaintext
-- **CORS**: Restricted to `durazno.org` only
+- **CORS**: Restricted to `mentor.durazno.org` only
 - **Secrets**: Google Secret Manager, never in code
 - **Auth**: OAuth 2.0, no passwords stored
 
@@ -156,7 +156,7 @@ The Unlicense - See [LICENSE](LICENSE) for details.
 
 ## Links
 
-- **Website**: [durazno.org](https://durazno.org)
+- **Website**: [mentor.durazno.org](https://mentor.durazno.org)
 - **Email**: hola@durazno.org
 
 ---

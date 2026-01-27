@@ -20,12 +20,12 @@
         <!-- Links -->
         <div class="flex items-center gap-6 text-gray-400">
           <a
-            href="https://durazno.org"
+            href="https://mentor.durazno.org"
             target="_blank"
             class="hover:text-white transition-colors flex items-center gap-2"
           >
             <Icon name="heroicons:globe-alt" class="w-5 h-5" />
-            durazno.org
+            mentor.durazno.org
           </a>
         </div>
       </div>
