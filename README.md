@@ -103,7 +103,7 @@ npm install
 # Deploy (requires gcloud CLI configured)
 gcloud functions deploy auth-callback \
   --gen2 \
-  --runtime=nodejs20 \
+  --runtime=nodejs24 \
   --trigger-http \
   --allow-unauthenticated \
   --set-secrets="GOOGLE_CLIENT_ID=your-secret:latest,GOOGLE_CLIENT_SECRET=your-secret:latest"
